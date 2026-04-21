@@ -1,5 +1,5 @@
 import type { Task, TaskStatus } from "../types/task.js"
-const API = "http://localhost:5000";
+import { API } from "../constants/api.js";
 
 export const taskService = {
   getAll: (): Promise<Task[]> =>
